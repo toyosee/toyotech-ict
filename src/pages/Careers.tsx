@@ -6,7 +6,7 @@ const Careers: React.FC = () => {
     { title: 'Technical Lead', type: 'Full-time', location: 'Lagos / Remote', dept: 'Engineering' },
     { title: 'AI Research Intern', type: 'Internship', location: 'Remote', dept: 'Research' },
     { title: 'UI/UX Designer', type: 'Contract', location: 'Hybrid', dept: 'Product' },
-    { title: 'Graduate Trainee', type: 'Fellowship', location: 'Lagos', dept: 'Academy' },
+    { title: 'Graduate Trainee', type: 'Fellowship', location: 'Kaduna', dept: 'Academy' },
   ];
 
   return (

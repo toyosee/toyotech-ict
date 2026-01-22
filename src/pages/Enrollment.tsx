@@ -1,8 +1,6 @@
-
 import React, { useState } from 'react';
 import { COURSES } from '../constants/constants';
-import {type EnrollmentData, CourseType } from '../../types';
-import { submitEnrollment } from '../services/enrollmentService';
+import { type EnrollmentData, CourseType } from '../../types';
 
 const Enrollment: React.FC = () => {
   const [formData, setFormData] = useState<Partial<EnrollmentData>>({
@@ -22,19 +20,39 @@ const Enrollment: React.FC = () => {
     setIsSubmitting(true);
     setStatus({ type: null, message: '' });
 
-    const result = await submitEnrollment(formData as EnrollmentData);
-    
-    if (result.success) {
-      setStatus({ type: 'success', message: result.message });
-      setFormData({
-        course: CourseType.SOFTWARE_ENGINEERING,
-        experienceLevel: 'Beginner'
+    try {
+      // Use Netlify function endpoint
+      const response = await fetch('/.netlify/functions/enroll', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    } else {
-      setStatus({ type: 'error', message: result.message });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setStatus({ type: 'success', message: result.message });
+        setFormData({
+          course: CourseType.SOFTWARE_ENGINEERING,
+          experienceLevel: 'Beginner'
+        });
+      } else {
+        setStatus({ 
+          type: 'error', 
+          message: result.error || result.message || 'Failed to submit enrollment' 
+        });
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      setStatus({ 
+        type: 'error', 
+        message: 'Network error. Please check your connection and try again.' 
+      });
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
   };
 
   return (
@@ -51,7 +69,7 @@ const Enrollment: React.FC = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-300">First Name</label>
+                <label className="text-sm font-medium text-gray-300">First Name *</label>
                 <input
                   required
                   name="firstName"
@@ -62,7 +80,7 @@ const Enrollment: React.FC = () => {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-300">Last Name</label>
+                <label className="text-sm font-medium text-gray-300">Last Name *</label>
                 <input
                   required
                   name="lastName"
@@ -76,7 +94,7 @@ const Enrollment: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-300">Email Address</label>
+                <label className="text-sm font-medium text-gray-300">Email Address *</label>
                 <input
                   required
                   type="email"
@@ -88,7 +106,7 @@ const Enrollment: React.FC = () => {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-300">Phone Number</label>
+                <label className="text-sm font-medium text-gray-300">Phone Number *</label>
                 <input
                   required
                   type="tel"
@@ -103,7 +121,7 @@ const Enrollment: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-300">Preferred Course</label>
+                <label className="text-sm font-medium text-gray-300">Preferred Course *</label>
                 <select
                   required
                   name="course"
@@ -117,7 +135,7 @@ const Enrollment: React.FC = () => {
                 </select>
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-300">Experience Level</label>
+                <label className="text-sm font-medium text-gray-300">Experience Level *</label>
                 <select
                   required
                   name="experienceLevel"

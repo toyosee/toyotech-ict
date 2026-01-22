@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "functions:build": "tsc --project ./netlify/functions/tsconfig.json",
+    "functions:serve": "netlify functions:serve"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "lucide-react": "^0.562.0",
+    "nodemailer": "^7.0.12",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.12.0",
@@ -19,9 +22,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@netlify/functions": "^5.1.2",
     "@types/node": "^24.10.1",
+    "@types/nodemailer": "^7.0.5",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
+    "@vercel/node": "^5.5.26",
     "@vitejs/plugin-react": "^5.1.1",
     "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9.39.1",
