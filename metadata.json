@@ -1,0 +1,8 @@
+{
+  "name": "ToyotechnICT Solutions",
+  "description": "A cutting-edge tech agency specializing in skill acquisition, IT transition, and business incubation.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
