@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  functions = "dist-functions"  # Compiled functions for production
+  publish = "dist"
+
+[dev]
+  port = 8888
+  targetPort = 5173
+  functionsPort = 9999
+  command = "npm run dev"
+  # Also use dist-functions for dev
+  functions = "dist-functions"

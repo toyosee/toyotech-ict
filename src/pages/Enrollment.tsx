@@ -22,7 +22,7 @@ const Enrollment: React.FC = () => {
 
     try {
       // Use Netlify function endpoint
-      const response = await fetch('/.netlify/functions/enroll', {
+      const response = await fetch('/.netlify/functions/enrollments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -8,8 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "functions:build": "tsc --project ./netlify/functions/tsconfig.json",
-    "functions:serve": "netlify functions:serve"
+     "netlify:dev": "netlify dev",
+    "build:functions": "cd netlify/functions && tsc",
+    "dev:full": "npm run build:functions && netlify dev",
+    "clean:dev": "rm -rf dist-functions && npm run build:functions && netlify dev --clean"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
