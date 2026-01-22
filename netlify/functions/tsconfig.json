@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "declaration": false,
+    "declarationMap": false,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "types": ["node"]
