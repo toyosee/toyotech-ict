@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build:prod"
   functions = "dist-functions"  # Compiled functions for production
   publish = "dist"
 

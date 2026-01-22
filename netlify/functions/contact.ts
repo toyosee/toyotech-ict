@@ -100,8 +100,8 @@ const handler: Handler = async (event) => {
     const safeMessage = sanitizeHtml(message);
     
     // Get site URL from environment or use default
-    const siteUrl = process.env.URL || 'https://toyotechnict.com';
-    const adminEmail = process.env.ADMIN_EMAIL || 'hello@toyotechnict.com';
+    const siteUrl = process.env.URL || 'https://toyotechnict.com.ng';
+    const adminEmail = process.env.ADMIN_EMAIL || 'tyabolaji@gmail.com';
     const emailHost = process.env.EMAIL_HOST || 'smtp.gmail.com';
     const emailPort = parseInt(process.env.EMAIL_SMTP_PORT || '587');
 
@@ -118,7 +118,7 @@ const handler: Handler = async (event) => {
 
     // Email to admin
     await transporter.sendMail({
-      from: `"ToyotechnICT Website" <${emailUser}>`,
+      from: `"ToyotechICT Website" <${emailUser}>`,
       replyTo: email,
       to: adminEmail,
       subject: `🚀 New Contact: ${safeSubject}`,
@@ -163,19 +163,19 @@ const handler: Handler = async (event) => {
 
     // Auto-reply to user
     await transporter.sendMail({
-      from: `"ToyotechnICT Solutions" <${emailUser}>`,
+      from: `"ToyotechICT Solutions" <${emailUser}>`,
       to: email,
-      subject: 'Thank you for contacting ToyotechnICT Solutions',
+      subject: 'Thank you for contacting ToyotechICT Solutions',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: linear-gradient(135deg, #5680c4 0%, #f26726 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
             <h2 style="margin: 0;">Thank You for Reaching Out! 🚀</h2>
-            <p style="margin: 5px 0 0 0; opacity: 0.9;">ToyotechnICT Solutions - A Step into the Future</p>
+            <p style="margin: 5px 0 0 0; opacity: 0.9;">ToyotechICT Solutions - A Step into the Future</p>
           </div>
           <div style="background: #f9f9f9; padding: 20px; border-radius: 0 0 8px 8px;">
             <p>Dear <strong>${safeName}</strong>,</p>
             
-            <p>Thank you for contacting ToyotechnICT Solutions. We have received your message and our team will review it shortly.</p>
+            <p>Thank you for contacting ToyotechICT Solutions. We have received your message and our team will review it shortly.</p>
             
             <div style="background: white; padding: 15px; border-radius: 8px; margin: 20px 0;">
               <p><strong>📧 Your Inquiry Details:</strong></p>
@@ -198,12 +198,12 @@ const handler: Handler = async (event) => {
             </ul>
             
             <p>Best regards,<br>
-            <strong>The ToyotechnICT Team</strong></p>
+            <strong>The ToyotechICT Team</strong></p>
           </div>
           <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 12px; text-align: center;">
             <p>This is an automated response. Please do not reply to this email.</p>
-            <p>© ${new Date().getFullYear()} ToyotechnICT Solutions. All rights reserved.</p>
-            <p>NO.1 Gongola Road, Barnawa. Kaduna. | +234 80-6921-3941 | hello@toyotechnict.com</p>
+            <p>© ${new Date().getFullYear()} ToyotechICT Solutions. All rights reserved.</p>
+            <p>NO.1 Gongola Road, Barnawa. Kaduna. | +234 80-6921-3941 | info@toyotechnict.com</p>
           </div>
         </div>
       `,

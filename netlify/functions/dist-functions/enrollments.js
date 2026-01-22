@@ -90,8 +90,8 @@ const handler = async (event) => {
         });
         // 5. Send Notification Email
         await transporter.sendMail({
-            from: `"ToyotechnICT Admissions" <${emailUser}>`,
-            to: process.env.ADMIN_EMAIL || 'hello@toyotechnict.com',
+            from: `"ToyotechICT Admissions" <${emailUser}>`,
+            to: process.env.ADMIN_EMAIL,
             subject: `🎓 New Enrollment: ${safeCourse}`,
             html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

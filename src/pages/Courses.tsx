@@ -3,7 +3,7 @@ import { ComprehensiveCourseType } from '../../types';
 import { Calendar, Clock, Code, Database, Zap, Users, BookOpen, CheckCircle, Award, Target, Smartphone, Globe, Layout, Shield, Cpu, Video } from 'lucide-react';
 import CourseCard from '../components/CourseCard';
 import CourseDetailsModal from '../components/CourseDetailsModal';
-import { CourseType, type CourseForModal, type FullCourse, flattenCourse } from '../../types';
+import {type CourseForModal, type FullCourse, flattenCourse } from '../../types';
 
 // Define the local course structure that matches your data
 interface LocalCourse {

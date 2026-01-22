@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Icons = {
   Code: () => (
     <svg className="w-8 h-8 text-toyoblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">

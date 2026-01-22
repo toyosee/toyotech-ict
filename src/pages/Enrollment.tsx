@@ -76,7 +76,7 @@ const Enrollment: React.FC = () => {
                   value={formData.firstName || ''}
                   onChange={handleChange}
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-toyoblue transition-colors"
-                  placeholder="John"
+                  placeholder="Elijah"
                 />
               </div>
               <div className="space-y-2">
@@ -87,7 +87,7 @@ const Enrollment: React.FC = () => {
                   value={formData.lastName || ''}
                   onChange={handleChange}
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-toyoblue transition-colors"
-                  placeholder="Doe"
+                  placeholder="Abolaji"
                 />
               </div>
             </div>

@@ -11,6 +11,7 @@
      "netlify:dev": "netlify dev",
     "build:functions": "cd netlify/functions && tsc",
     "dev:full": "npm run build:functions && netlify dev",
+    "build:prod": "npm run build:functions && npm run build",
     "clean:dev": "rm -rf dist-functions && npm run build:functions && netlify dev --clean"
   },
   "dependencies": {
