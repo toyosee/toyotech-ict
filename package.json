@@ -11,7 +11,7 @@
      "netlify:dev": "netlify dev",
     "build:functions": "tsc -p netlify/functions/tsconfig.json",
     "dev:full": "npm run build:functions && netlify dev",
-    "build:prod": "npm run build:functions && npm run build",
+    "build:prod": "npm run build:functions && npm run build && netlify build",
     "clean:dev": "rm -rf dist-functions && npm run build:functions && netlify dev --clean"
   },
   "dependencies": {
