@@ -95,8 +95,8 @@ const handler: Handler = async (event): Promise<HandlerResponse> => {
     const safeMessage = message ? sanitizeHtml(message) : 'No additional notes provided.';
 
     const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST || 'smtp.gmail.com',
-      port: parseInt(process.env.EMAIL_SMTP_PORT || '587'),
+      host: process.env.EMAIL_HOST || '',
+      port: parseInt(process.env.EMAIL_SMTP_PORT || ''),
       secure: process.env.EMAIL_SMTP_PORT === '465',
       auth: {
         user: emailUser,

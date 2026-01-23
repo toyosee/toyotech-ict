@@ -100,10 +100,10 @@ const handler: Handler = async (event) => {
     const safeMessage = sanitizeHtml(message);
     
     // Get site URL from environment or use default
-    const siteUrl = process.env.URL || 'https://toyotechnict.com.ng';
-    const adminEmail = process.env.ADMIN_EMAIL || 'tyabolaji@gmail.com';
-    const emailHost = process.env.EMAIL_HOST || 'smtp.gmail.com';
-    const emailPort = parseInt(process.env.EMAIL_SMTP_PORT || '587');
+    const siteUrl = process.env.URL || '';
+    const adminEmail = process.env.ADMIN_EMAIL || '';
+    const emailHost = process.env.EMAIL_HOST || '';
+    const emailPort = parseInt(process.env.EMAIL_SMTP_PORT || '');
 
     // Create email transporter
     const transporter = nodemailer.createTransport({
