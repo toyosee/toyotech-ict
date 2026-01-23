@@ -8,6 +8,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Incubation', href: '#/incubation' },
   { label: 'Careers', href: '#/careers' },
   { label: 'Contact', href: '#/contact' },
+  { label: 'FAQ', href: '#/faq' },
 ];
 
 export const COURSES = Object.values(CourseType);

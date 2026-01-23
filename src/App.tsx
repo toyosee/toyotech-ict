@@ -11,6 +11,7 @@ import Privacy from './pages/Privacy';
 import Courses from './pages/Courses';
 import Incubation from './pages/Incubation';
 import Careers from './pages/Careers';
+import FAQ from './pages/Faq';
 import WhatsAppFloatingButton from './components/Chat';
 
 const ScrollToTop = () => {
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <Route path="/enroll" element={<Enrollment />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/faq" element={<FAQ />} />
             {/* Catch all to home */}
             <Route path="*" element={<Home />} />
           </Routes>
