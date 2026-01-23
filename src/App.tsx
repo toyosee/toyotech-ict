@@ -11,6 +11,7 @@ import Privacy from './pages/Privacy';
 import Courses from './pages/Courses';
 import Incubation from './pages/Incubation';
 import Careers from './pages/Careers';
+import WhatsAppFloatingButton from './components/Chat';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -40,6 +41,7 @@ const App: React.FC = () => {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
+        <WhatsAppFloatingButton />
         <Footer />
       </div>
     </Router>
