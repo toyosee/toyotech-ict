@@ -217,7 +217,7 @@ const handler: Handler = async (event) => {
       },
       body: JSON.stringify({
         success: true,
-        message: 'Message sent successfully! We will respond between 24-48 hours.'
+        message: 'Inquiry received! We will respond between 24-48 hours.'
       }),
     };
 
