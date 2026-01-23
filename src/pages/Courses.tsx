@@ -101,7 +101,7 @@ const Courses: React.FC = () => {
         ],
         tools: ['Python', 'Jupyter', 'SQL', 'Tableau', 'Power BI', 'Excel'],
         schedule: 'Mon/Wed/Fri 10 AM - 12 PM',
-        price: '₦150,000',
+        price: '₦200,000',
         certification: 'ToyotechnICT Data Analyst Certification & CISCO Data Analytics Certification'
       }
     },
@@ -135,7 +135,7 @@ const Courses: React.FC = () => {
         ],
         tools: ['Python', 'TensorFlow', 'PyTorch', 'OpenCV', 'Hugging Face', 'FastAPI'],
         schedule: 'Tue/Thur 3-5:30 PM & Saturday 3 PM - 5 PM',
-        price: '₦350,000',
+        price: '₦250,000',
         certification: 'ToyotechnICT AI/ML Engineer Certification & CISCO Certification'
       }
     },
@@ -170,7 +170,7 @@ const Courses: React.FC = () => {
         ],
         tools: ['Wireshark', 'Metasploit', 'Nmap', 'Burp Suite', 'Kali Linux', 'AWS Security'],
         schedule: 'Mon/Wed/Fri 6-9 PM',
-        price: '₦480,000',
+        price: '₦350,000',
         certification: 'ToyotechnICT Cybersecurity Analyst Certification & CISCO Certification'
       }
     },
@@ -204,7 +204,7 @@ const Courses: React.FC = () => {
         ],
         tools: ['Figma', 'Adobe XD', 'Miro', 'UserTesting', 'Google Analytics'],
         schedule: 'Tue/Thu 6-9 PM & Project work on weekends',
-        price: '₦280,000',
+        price: '₦180,000',
         certification: 'ToyotechnICT UI/UX Designer Certification & CISCO Certification'
       }
     },
@@ -239,7 +239,7 @@ const Courses: React.FC = () => {
         ],
         tools: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'Jenkins'],
         schedule: 'Tue/Thu 6-9 PM & Saturday labs',
-        price: '₦380,000',
+        price: '₦350,000',
         certification: 'ToyotechnICT Cloud & DevOps Engineer Certification & CISCO Certification'
       }
     }
@@ -275,7 +275,7 @@ const Courses: React.FC = () => {
         ],
         tools: ['Excel', 'SQL', 'Power BI', 'Tableau', 'Python (optional)'],
         schedule: 'Weekday evenings (4 weeks) or Weekend intensives (8 weeks)',
-        price: '₦120,000 - ₦180,000 (based on duration)',
+        price: '₦130,000 - ₦180,000 (based on duration)',
         certification: 'ToyotechnICT Data Analysis Certificate'
       }
     },
@@ -307,8 +307,8 @@ const Courses: React.FC = () => {
         ],
         tools: ['Java/Python/C#/Dart', 'VS Code/IntelliJ', 'Git Basics'],
         schedule: 'Mon/Wed/Fri 11 - 1 PM or Saturday 10 AM - 4 PM',
-        price: '₦130,000',
-        certification: 'ToyotechnICT Programming Fundamentals Certificate & CISCO Certification'
+        price: '₦150,000',
+        certification: 'ToyotechICT Programming Fundamentals Certificate & CISCO Certification'
       }
     },
     { 
@@ -340,7 +340,7 @@ const Courses: React.FC = () => {
         tools: ['React Native/Flutter', 'Expo', 'Firebase', 'REST APIs'],
         schedule: 'Tue/Thu 6-9 PM & Saturday project sessions',
         price: '₦150,000',
-        certification: 'ToyotechnICT Mobile Developer Certificate'
+        certification: 'ToyotechICT Mobile Developer Certificate & CISCO Certification'
       }
     },
     { 
@@ -370,9 +370,9 @@ const Courses: React.FC = () => {
           'Deploy websites to live servers'
         ],
         tools: ['HTML5', 'CSS3', 'JavaScript', 'React Basics', 'GitHub Pages'],
-        schedule: 'Mon/Wed/Fri 6-8:30 PM',
-        price: '₦120,000',
-        certification: 'ToyotechnICT Web Developer Certificate'
+        schedule: 'Mon/Wed/Fri 2-4:30 PM',
+        price: '₦150,000',
+        certification: 'ToyotechICT Web Developer Certificate & CISCO Certification'
       }
     },
     { 
@@ -402,9 +402,9 @@ const Courses: React.FC = () => {
           'Manage website content effectively'
         ],
         tools: ['WordPress', 'Webflow', 'Elementor', 'WooCommerce', 'Google Analytics'],
-        schedule: 'Tue/Thu 6-8 PM & weekend workshops',
+        schedule: 'Tue/Thu 9-11 AM & weekend workshops',
         price: '₦80,000',
-        certification: 'ToyotechnICT No-Code Developer Certificate'
+        certification: 'ToyotechICT No-Code Developer Certificate & CISCO Certification'
       }
     },
     { 
@@ -435,9 +435,9 @@ const Courses: React.FC = () => {
           'Run PPC advertising campaigns'
         ],
         tools: ['Google Analytics', 'Facebook Ads', 'Mailchimp', 'SEMrush', 'Canva'],
-        schedule: 'Mon/Wed 6-9 PM & practical assignments',
+        schedule: 'Mon/Wed 4-6 PM & practical assignments',
         price: '₦100,000',
-        certification: 'ToyotechnICT Digital Marketing Certificate'
+        certification: 'ToyotechICT Digital Marketing Certificate & CISCO Certification'
       }
     },
     { 
@@ -469,7 +469,7 @@ const Courses: React.FC = () => {
         tools: ['Adobe Premiere Pro', 'Canva', 'CapCut', 'Adobe Photoshop'],
         schedule: 'Weekend workshops (Saturdays 10 AM - 4 PM)',
         price: '₦85,000',
-        certification: 'ToyotechnICT Content Creator Certificate'
+        certification: 'ToyotechICT Content Creator Certificate & CISCO Certification'
       }
     }
   ];
