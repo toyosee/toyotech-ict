@@ -8,6 +8,7 @@ export const ComprehensiveCourseType = {
   CYBER_SECURITY: 'Cyber Security',
   UI_UX_DESIGN: 'UI/UX Design',
   CLOUD_COMPUTING: 'Cloud Computing',
+  ONLINE_PYTHON_CLASS: 'Online Python Class',
 } as const;
 
 export const CrashCourseType = {

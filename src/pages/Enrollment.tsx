@@ -10,7 +10,7 @@ const Enrollment: React.FC = () => {
     lastName: '',
     email: '',
     phone: '',
-    course: CourseType.SOFTWARE_ENGINEERING,
+    course: CourseType.ONLINE_PYTHON_CLASS,
     experienceLevel: 'Beginner',
     message: ''
   });

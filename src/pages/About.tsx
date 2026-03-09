@@ -53,7 +53,7 @@ const About: React.FC = () => {
             <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-4/5 max-w-md">
               <div className="glass rounded-2xl p-6 text-center border border-white/10 shadow-2xl backdrop-blur-lg">
                 <h3 className="font-orbitron text-xl font-bold text-white mb-1">Elijah Abolaji</h3>
-                <p className="text-toyoorange text-sm font-medium mb-4">Founder & CEO</p>
+                <p className="text-toyoorange text-sm font-medium mb-4">Founder & MD</p>
                 
                 {/* Social Links */}
                 <div className="flex justify-center space-x-4">
@@ -146,9 +146,9 @@ const About: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Elijah Abolaji . O (M.N.C.S)", role: "CEO & Founder", image: "toyotech-founder.png" },
-              { name: "Citp. Lawrence Ogbu", role: "CTO", image: "lawrence-o.jpg" },
-              { name: "David Kim", role: "Head of Education", image: "https://i.pravatar.cc/300?u=david" },
+              { name: "Elijah Abolaji . O (M.N.C.S)", role: "MD & Founder", image: "toyotech-founder.png" },
+              { name: "Citp. Lawrence Ogbu", role: "CTO & CO-FOUNDER", image: "lawrence-o.jpg" },
+              { name: "Mayowa Ajoye", role: "Head Of Operations", image: "mayowa.jpeg" },
             ].map((person, index) => (
               <div key={index} className="group text-center p-8 rounded-3xl border border-white/5 bg-cardbg/30 hover:bg-cardbg/50 transition-all duration-300">
                 <div className="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-2 border-white/10 group-hover:border-toyoblue/50 transition-colors">
@@ -161,7 +161,7 @@ const About: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{person.name}</h3>
                 <p className="text-toyoblue font-medium mb-4">{person.role}</p>
-                <p className="text-gray-400 text-sm">Driving innovation and excellence in EdTech</p>
+                {/* <p className="text-gray-400 text-sm">Driving innovation and excellence in EdTech</p> */}
               </div>
             ))}
           </div>

@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Courses from './pages/Courses';
 import Incubation from './pages/Incubation';
+import PythonLanding from './pages/OnlinePython';
 import Careers from './pages/Careers';
 import FAQ from './pages/Faq';
 import WhatsAppFloatingButton from './components/Chat';
@@ -39,6 +40,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/python" element={<PythonLanding />} />
             {/* Catch all to home */}
             <Route path="*" element={<Home />} />
           </Routes>

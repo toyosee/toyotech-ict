@@ -50,7 +50,7 @@ const FAQ: React.FC = () => {
           
           {/* Header Section */}
           <div className="text-center mb-12 space-y-4">
-            <h1 className="font-orbitron text-4xl font-bold text-white">Common Questions</h1>
+            <h1 className="font-orbitron text-4xl font-bold text-white">Frequently Asked Questions</h1>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Find answers to the most frequently asked questions about our academy, 
               incubation hub, and partnership opportunities.

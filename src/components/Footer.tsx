@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { SITE_NAME, NAV_LINKS } from '../constants/constants';
-import {Twitter, Linkedin, Github} from 'lucide-react';
+import {Linkedin, Github} from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
               expert training, and strategic incubation.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-toyoblue transition-colors"><Twitter className="h-5 w-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-toyoblue transition-colors"><Linkedin className="h-5 w-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-toyoblue transition-colors"><Github className="h-5 w-5" /></a>
+              {/* <a href="#" className="text-gray-400 hover:text-toyoblue transition-colors"><Twitter className="h-5 w-5" /></a> */}
+              <a href="https://linkedin.com/in/elijahabolaji/" className="text-gray-400 hover:text-toyoblue transition-colors" target='_blank'><Linkedin className="h-5 w-5" /></a>
+              <a href="https://github.com/toyosee" className="text-gray-400 hover:text-toyoblue transition-colors" target='_blank'><Github className="h-5 w-5" /></a>
             </div>
           </div>
           
@@ -31,6 +31,8 @@ const Footer: React.FC = () => {
                   <a href={link.href} className="hover:text-toyoblue transition-colors">{link.label}</a>
                 </li>
               ))}
+              <li><a href="#/python" className="hover:text-toyoblue transition-colors">Online Class</a></li>
+              <li><a href="#/faq" className="hover:text-toyoblue transition-colors">FAQ</a></li>
               <li><a href="#/privacy" className="hover:text-toyoblue transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
